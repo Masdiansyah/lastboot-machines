@@ -9,7 +9,9 @@ let visible = 8;
 function renderCards(){
   grid.innerHTML = samples.slice(0, visible).map(([id,name],i)=>`
     <article class="machine-card" onclick="openRecord('${id.replace('#','')}')">
-      <div class="machine-art"><div class="glyph">${String(i+1).padStart(2,'0')}</div></div>
+      <div class="machine-art">
+  <img src="assets/machines/${id.replace('#','')}.png" alt="LASTBOOT ${id}">
+</div>
       <div class="machine-info"><strong>LASTBOOT ${id}</strong><span>${name}</span></div>
     </article>`).join('');
 }
