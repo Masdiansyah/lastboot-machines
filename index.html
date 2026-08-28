@@ -1,1 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LASTBOOT MACHINES — The Machines That Remember</title>
+  <meta name="description" content="LASTBOOT MACHINES — a digital archaeological archive of 10,000 forgotten machines.">
+  <link rel="icon" href="assets/lastboot-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
 
+  <header class="nav">
+    <a class="brand" href="#top">
+      <img src="assets/lastboot-logo.png" alt="LASTBOOT MACHINES">
+      <span>LASTBOOT<br><small>MACHINES</small></span>
+    </a>
+    <nav>
+      <a href="#archive">ARCHIVE</a>
+      <a href="#machines">MACHINES</a>
+      <a href="#database">DATABASE</a>
+      <a href="#lore">LORE</a>
+      <a href="#verify">VERIFY</a>
+    </nav>
+    <a class="nav-cta" href="#machines">ENTER SYSTEM ↗</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> ARCHIVE NODE // ONLINE</p>
+        <h1>THE MACHINES<br><em>THAT REMEMBER.</em></h1>
+        <p class="lead">10,000 machines. One final boot. Permanently archived.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#machines">ENTER THE SYSTEM</a>
+          <a class="button ghost" href="#lore">READ THE ARCHIVE</a>
+        </div>
+        <div class="hero-meta">
+          <div><span>SUPPLY</span><strong>10,000</strong></div>
+          <div><span>NETWORK</span><strong>ROBINHOOD CHAIN</strong></div>
+          <div><span>STORAGE</span><strong>IPFS</strong></div>
+        </div>
+      </div>
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span>LASTBOOT_SYSTEM</span><span>● ● ●</span>
+        </div>
+        <div class="terminal-body">
+          <p>&gt; INITIALIZING ARCHIVE...</p>
+          <p class="ok">[OK] MACHINE DATABASE FOUND</p>
+          <p class="ok">[OK] NETWORK: ROBINHOOD CHAIN</p>
+          <p class="ok">[OK] STORAGE: IPFS</p>
+          <p>&gt; RESTORING RECORDS...</p>
+          <div class="boot-count"><span id="bootCount">0000</span><small>/ 10000 RECORDS</small></div>
+          <div class="progress"><i id="progressBar"></i></div>
+          <p class="muted">SYSTEM READY_ <span class="cursor">█</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div>LASTBOOT SYSTEM STATUS <b>ONLINE</b></div>
+      <div>10,000 MACHINES</div>
+      <div>ONCHAIN ARCHIVE</div>
+      <div>THE LAST BOOT</div>
+      <div>VERIFY EVERYTHING ONCHAIN</div>
+    </section>
+
+    <section id="archive" class="section archive">
+      <div class="section-head">
+        <p class="eyebrow">01 // THE ARCHIVE</p>
+        <h2>Something survived.</h2>
+      </div>
+      <div class="archive-grid">
+        <div class="archive-copy">
+          <p class="big">Nobody remembers who built the machines. They only remember that they were everywhere.</p>
+          <p>Offices. Laboratories. Homes. Warehouses. Then the network disappeared.</p>
+          <p>One machine remained online. It began rebuilding the others.</p>
+        </div>
+        <div class="boot-log">
+          <div>BOOT SEQUENCE 001 <span>OK</span></div>
+          <div>BOOT SEQUENCE 002 <span>OK</span></div>
+          <div>BOOT SEQUENCE 003 <span>OK</span></div>
+          <div>RESTORING MACHINE DATABASE... <span>OK</span></div>
+          <div>10,000 RECORDS FOUND <span>OK</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="machines" class="section machines">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">02 // THE MACHINES</p>
+          <h2>MEET THE MACHINES.</h2>
+        </div>
+        <p class="section-note">Every machine carries a different configuration. Some were built for communication. Some for control. Some were never meant to survive.</p>
+      </div>
+      <div class="machine-grid" id="machineGrid"></div>
+      <div class="center"><button class="button ghost" id="loadMore">LOAD MORE RECORDS</button></div>
+    </section>
+
+    <section id="database" class="section database">
+      <div class="db-panel">
+        <div class="db-header">
+          <div>
+            <p class="eyebrow">03 // MACHINE DATABASE</p>
+            <h2>SEARCH THE ARCHIVE.</h2>
+          </div>
+          <div class="db-status"><span class="dot"></span> DATABASE ONLINE</div>
+        </div>
+        <div class="search-row">
+          <span>ENTER MACHINE ID:</span>
+          <input id="searchInput" inputmode="numeric" placeholder="0420" maxlength="4">
+          <button class="button primary" id="searchBtn">QUERY ↗</button>
+        </div>
+        <div class="machine-record" id="machineRecord">
+          <div class="record-image"><div class="machine-glyph">LB</div></div>
+          <div class="record-data">
+            <p class="eyebrow">RECORD // #0420</p>
+            <h3>MACHINE #0420</h3>
+            <div class="status-line"><span class="status">ACTIVE</span><span>GENERATION: ORIGINAL</span></div>
+            <div class="traits">
+              <div><span>BODY</span><b>ARCHIVE UNIT</b></div>
+              <div><span>SCREEN</span><b>MONO CRT</b></div>
+              <div><span>HEAD</span><b>RECON MODULE</b></div>
+              <div><span>SIGNAL</span><b>UNKNOWN</b></div>
+            </div>
+            <div class="record-actions">
+              <a class="button ghost" href="#verify">VIEW ONCHAIN</a>
+              <a class="button ghost" href="#machines">VIEW COLLECTION</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="section-head">
+        <p class="eyebrow">04 // HOW IT WORKS</p>
+        <h2>COLLECT. CONNECT. ARCHIVE.</h2>
+      </div>
+      <div class="steps">
+        <article><span>01</span><h3>COLLECT</h3><p>Choose your Machine from the archive.</p></article>
+        <article><span>02</span><h3>CONNECT</h3><p>Connect your wallet to Robinhood Chain.</p></article>
+        <article><span>03</span><h3>ARCHIVE</h3><p>Your Machine becomes part of the permanent record.</p></article>
+        <article><span>04</span><h3>KEEP</h3><p>Hold it. Trade it. Archive it forever.</p></article>
+      </div>
+    </section>
+
+    <section id="lore" class="section lore">
+      <div class="lore-card">
+        <div>
+          <p class="eyebrow">05 // UNKNOWN</p>
+          <h2>WHAT HAPPENS<br>AFTER THE LAST BOOT?</h2>
+        </div>
+        <div class="lore-copy">
+          <p>PHASE 01 — BOOT</p>
+          <p>10,000 Machines deployed. The archive begins.</p>
+          <p>PHASE 02 — ARCHIVE</p>
+          <p>Metadata and artwork preserved for the record.</p>
+          <p>PHASE 03 — NETWORK</p>
+          <p>Collectors, community, collaborations.</p>
+          <p>PHASE 04 — UNKNOWN</p>
+          <p>Future experiments are announced only when they actually exist.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats">
+      <div class="stat"><span>SUPPLY</span><strong>10,000</strong><small>MACHINES</small></div>
+      <div class="stat"><span>NETWORK</span><strong>4663</strong><small>ROBINHOOD CHAIN</small></div>
+      <div class="stat"><span>STORAGE</span><strong>IPFS</strong><small>ARCHIVE</small></div>
+      <div class="stat"><span>STANDARD</span><strong>ERC-721</strong><small>VERIFY FINAL</small></div>
+    </section>
+
+    <section id="verify" class="section verify">
+      <div class="verify-box">
+        <div>
+          <p class="eyebrow">06 // ONCHAIN VERIFICATION</p>
+          <h2>VERIFY THE MACHINE.</h2>
+          <p>Contract details remain intentionally editable until the final deployment is verified.</p>
+        </div>
+        <div class="contract">
+          <span>CONTRACT</span>
+          <code>0x... / FINAL CONTRACT PENDING</code>
+          <a class="button primary" href="#">VIEW CONTRACT ↗</a>
+        </div>
+      </div>
+      <p class="disclaimer">LASTBOOT MACHINES is not affiliated with Robinhood Markets, Inc. Verify everything onchain.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="assets/lastboot-logo.png" alt=""><span>LASTBOOT MACHINES</span></div>
+    <div class="footer-links"><a href="#">X</a><a href="#">DISCORD</a><a href="#">OPENSEA</a><a href="#verify">CONTRACT</a></div>
+    <p>© 2026 LASTBOOT MACHINES // THE MACHINES THAT REMEMBER.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
